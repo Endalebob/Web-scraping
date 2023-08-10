@@ -38,6 +38,7 @@ for i in range(len(contest_list)):
     contest_name = driver.find_element(By.XPATH,'//h1').text
     for i in range(1,len(tr)):
         trr = tr[i].find_elements(By.XPATH,'.//td')
+        print(trr)
         ele = trr[0].text
         rank.append(ele)
         ele = trr[1].text
@@ -53,6 +54,6 @@ for i in range(len(contest_list)):
     contest_list = driver.find_elements(By.XPATH, '//div[@class="px-4"]')
     df = pd.DataFrame({"name":name,"rank":rank,"score":score,"finsh_time":time_finsh})
     print(df)
-    df.to_csv(f"{contest_name}.csv",index=False)
+
 
 driver.quit()

@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-PATH = "C:/Users/Admin/Documents/chromedriver_win32/chromedriver.exe"
+PATH = "C:/Users/Admin/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe"
 ser = Service(PATH)
 options = Options()
 # options.add_experimental_option("detach", True)
@@ -42,4 +42,4 @@ for i in range(1,n+1):
             print(i)
 driver.quit()
 df = pd.DataFrame({"title": title, "author": author, "length": length})
-df.to_csv('christian_audio_books.csv', index=False)
+print(df)
