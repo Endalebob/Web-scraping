@@ -1,2 +1,1 @@
-# My-works-and-thoutght
-for my work
+# This Repository contains different web scrapping projects with Beautiful Soup, Selenium, and Scrapy
